@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+$primary-back-ground: rgb(29, 28, 28);
+$primary-size: 24px;
+$primary-margin: 0 auto;
+
+* {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-size: $primary-size;
+}
+
+body {
+    background: $primary-back-ground;
+}
+
+.container {
+    margin: $primary-margin;
+    text-align: center;
+
+    h1 {
+        padding-top: 25px;
+        color: rgb(255, 253, 253);
+        font-weight: bold;
+        font-size: 28px;
+    }
+
+    .calc-card {
+        top: 20px;
+        position: relative;
+        width: 350px;
+        padding: 15px 0;
+        padding-top: 20px;
+        margin: $primary-margin;
+        background: #444;
+        border-radius: 20px;
+    }
+}
+
+.calc-card {
+    #clear {
+        float: left;
+        position: relative;
+        left: 28px;
+        top: 6px;
+        background-color: #d02200;
+        border: 1px solid #d02200;
+
+        &:active {
+            border: 1px solid #444;
+        }
+    }
+
+    .screen {
+        overflow: auto;
+        width: 58%;
+        height: 54px;
+        margin: 10px;
+        line-height: 54px;
+        margin: 0 20px;
+        left: 44px;
+        position: relative;
+        padding-right: 9px;
+        background: #cad69a;
+        text-align: right;
+        border-radius: 6px;
+        border: 1px solid #6b6b6b;
+        font-weight: bolder;
+        color: #111;
+    }
+
+    .buttons {
+        width: 340px;
+        /* margin: 12px; */
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+}
+
+.buttons {
+    .operator {
+        background-color: #777;
+        border: 1px solid #666;
+
+        &:hover {
+            background-color: rgb(150, 150, 150);
+            border: 1px solid rgb(187, 185, 185);
+            color: #111;
+        }
+    }
+
+    #equal {
+        width: 65px;
+        background-color: rgb(85, 77, 2);
+        outline: none;
+    }
+}
+
+button {
+    width: 65px;
+    height: 45px;
+    padding: 0;
+    outline: none;
+    margin: 0px 0px 10px 5px;
+    border: 1px solid #333;
+    border-radius: 6px;
+    color: #fefefe;
+    line-height: 45px;
+    background: $primary-back-ground;
+    transition: all 1s ease;
+
+    &:hover {
+        cursor: pointer;
+        background: rgb(0, 0, 0);
+    }
+
+    &:active {
+        color: #fff;
+        outline: none;
+        border: 1px solid rgb(136, 136, 136);
+    }
+}
